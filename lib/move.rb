@@ -8,7 +8,8 @@ end
 
 # code your input_to_index and move method here!
 def input_to_index(user_move)
-  board[user_move - 1] = user_move
+  position = user_move.to_i
+  board[position - 1] = position
 end
 
 def move()
